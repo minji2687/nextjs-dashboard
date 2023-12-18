@@ -13,29 +13,16 @@ export default function Page() {
         backgroundPosition: 'center center', // 이미지를 가운데로 정렬
       }}
     >
-      {/* <div
-        style={{
-          position: 'absolute',
-          bottom: 0,
-          left: '-1000%',
-          width: '10000%',
-          height: '10000%',
-          border: '1px solid black',
-          backgroundColor: 'grey',
-          transformOrigin: 'bottom right',
-          transform: 'rotateX(100deg) translateZ(0px)',
-        }}
-      ></div> */}
       <div
         style={{
           position: 'absolute',
           left: 0,
           width: '35%',
           height: '75vh',
-          border: '1px solid black',
-          backgroundColor: 'white',
+          backgroundColor: '#f8f8f8',
           transformOrigin: '0 0',
           transform: 'rotateY(45deg) translateZ(-40px)',
+          boxShadow: '5px 50px 30px rgba(0, 0, 0, 0.1)',
         }}
       ></div>
       <div
@@ -44,10 +31,10 @@ export default function Page() {
           right: '-50%',
           width: '110%',
           height: '73vh',
-          border: '1px solid black',
           transformOrigin: 'right',
-          backgroundColor: 'white',
+          backgroundColor: '#f8f8f8',
           transform: 'rotateY(0deg) translateZ(-950px)',
+          boxShadow: '5px 20px 30px rgba(0, 0, 0, 0.1)',
         }}
       ></div>
       <div
@@ -56,13 +43,11 @@ export default function Page() {
           right: '-50%',
           width: '70%',
           height: '73vh',
-          border: '1px solid black',
-          backgroundColor: 'white',
+          backgroundColor: '#f8f8f8',
           transform: 'rotateY(-30deg) translateZ(-800px)',
+          boxShadow: '5px 10px 25px rgba(0, 0, 0, 0.1)',
         }}
       ></div>
-
-      {/* <div class="floor-ceiling ceiling"></div> */}
     </div>
   );
 }
