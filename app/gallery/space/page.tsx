@@ -1,3 +1,5 @@
+// 'use client';
+import Wall from '@/app/ui/space/wall';
 import bg from '@/public/space/bg.jpg';
 
 export default function Page() {
@@ -13,18 +15,32 @@ export default function Page() {
         backgroundPosition: 'center center', // 이미지를 가운데로 정렬
       }}
     >
-      <div
+      <Wall />
+      {/* <div
+        onClick={handleFirstWall}
         style={{
           position: 'absolute',
           left: 0,
           width: '35%',
+          top: '10%',
           height: '75vh',
           backgroundColor: '#f8f8f8',
           transformOrigin: '0 0',
           transform: 'rotateY(45deg) translateZ(-40px)',
           boxShadow: '5px 50px 30px rgba(0, 0, 0, 0.1)',
+          transition: 'all 1s',
+          zIndex: 1,
+
+          ...(isOpenFirstWall && {
+            position: 'fixed',
+            width: '100%',
+            height: '100vh',
+            top: 0,
+            right: 0,
+            transform: 'none',
+          }),
         }}
-      ></div>
+      ></div> */}
       <div
         style={{
           position: 'absolute',
