@@ -9,11 +9,11 @@ export type User = {
   password: string;
 };
 
-export type Customer = {
+export type Gallery = {
   id: string;
-  name: string;
-  email: string;
-  image_url: string;
+  userId: string;
+  title: string;
+  discription: string;
 };
 
 export type Invoice = {

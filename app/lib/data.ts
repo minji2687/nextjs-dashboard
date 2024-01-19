@@ -7,19 +7,17 @@ import {
   LatestInvoiceRaw,
   User,
   Revenue,
+  Gallery,
 } from './definitions';
 import { formatCurrency } from './utils';
 import { unstable_noStore as noStore } from 'next/cache';
 
-export async function fetchRevenue() {
+export async function fetchGallerys() {
   // Add noStore() here prevent the response from being cached.
   // This is equivalent to in fetch(..., {cache: 'no-store'}).
   noStore();
   try {
-    // Artificially delay a response for demo purposes.
-    // Don't do this in production :)
-
-    const data = await sql<Revenue>`SELECT * FROM revenue`;
+    const data = await sql<Gallery>`SELECT * FROM gallerys`;
 
     return data.rows;
   } catch (error) {

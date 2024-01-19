@@ -11,7 +11,7 @@ export default function Wall() {
   const [blob, setBlob] = useState<PutBlobResult | null>(null);
   const [imagePreview, setImagePreview] = useState('');
   const handleOpenWall = () => {
-    setIsOpenFirstWall((prev) => !prev);
+    setIsOpenFirstWall(true);
   };
 
   const addPreviewImage = (file: any) => {
