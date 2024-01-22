@@ -4,5 +4,5 @@ export const runtime = 'edge';
 
 export async function GET(request: Request) {
   const { blobs } = await list();
-  return Response.json(blobs);
+  return (Response as any).json(blobs);
 }
